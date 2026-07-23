@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tech.case.sg</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/panel.css">
+  </head>
+<body>
+
+  <section id="gate" class="gate">
+    <div class="gate-card">
+      <p class="eyebrow">tech.case.sg</p>p>
+      <h1 class="gate-title">What we know,<br>everywhere.</h1>h1>
+      <p class="gate-sub">One store. Nothing overwritten, nothing older than what it replaces.</p>p>
+      <form id="signin" class="signin" autocomplete="on">
+        <label class="field">
+          <span class="field-label">Password</span>span>
+          <input id="password" type="password" required autocomplete="current-password" spellcheck="false">
+        </label>label>
+        <button id="signin-btn" type="submit" class="btn">Sign in</button>button>
+        <p id="gate-error" class="gate-error" role="alert" hidden></p>p>
+      </form>form>
+    </div>div>
+    <footer class="gate-foot"><span class="mono" id="gate-status">not connected</span>span></footer>footer>
+  </section>section>
+
+  <main id="shell" class="shell" hidden>
+    <header class="bar">
+      <div class="bar-left">
+        <span class="mark">tech.case.sg</span>span>
+        <nav class="tabs" id="tabs">
+          <button class="tab is-on" data-view="method">Method</button>button>
+          <button class="tab" data-view="identity">Registry</button>button>
+          <button class="tab" data-view="leases">Held now</button>button>
+          <button class="tab" data-view="rejected">Refused</button>button>
+        </nav>nav>
+      </div>div>
+      <div class="bar-right">
+        <span class="mono dim" id="clock"></span>span>
+        <button class="btn btn-quiet" id="signout">Sign out</button>button>
+      </div>div>
+    </header>header>
+
+    <section class="view is-on" data-view="method">
+      <div class="view-head">
+        <h2>Method</h2>
+      <p class="lede">Rules that hold for tasks nobody has thought of yet. Read on every session.</p>p>
+      </div>div>
+    <div id="proposals-wrap" class="callout" hidden>
+    <p><strong><span id="proposal-count">0</span>span> proposed</strong> - asserted by Claude, not truth until you promote them.</p>
+    <button class="btn btn-small" id="promote-all">Promote all</button>button>
+    </div>div>
+    <div id="method-list" class="rail"></div>div>
+    </section>section>
+  
+  <section class="view" data-view="identity">
+  <div class="view-head">
+  <h2>Registry</h2>
+  <p class="lede">Machines, surfaces and targets. Anything unregistered is not a participant - and is shown as such, never quietly omitted.</p>
+  </div>div>
+  <div id="identity-list" class="cards"></div>div>
+  </section>section>
+  
+  <section class="view" data-view="leases">
+  <div class="view-head">
+  <h2>Held now</h2>
+  <p class="lede">Live holds. Anything not on this list is denied, however reachable it happens to be.</p>
+  </div>div>
+  <div id="lease-list" class="cards"></div>div>
+  </section>section>
+  
+  <section class="view" data-view="rejected">
+  <div class="view-head">
+  <h2>Refused</h2>
+  <p class="lede">Writes turned away, and why. A stale machine pushing old over new appears here rather than failing quietly.</p>
+  </div>div>
+  <div id="rejected-list" class="rows"></div>div>
+  </section>section>
+  </main>main>
+
+<script src="assets/config.js"></script>
+<script type="module" src="assets/panel.js"></script>
+</body>
+</html>html>
+</strong></p></h2>
+</body></title>
+  </head>
